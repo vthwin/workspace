@@ -7,10 +7,19 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Ignore all node_modules folders recursively
+**/node_modules/
+
+# Ignore build outputs and JS/TS module artifacts
+**/*.js
+**/*.mjs
+**/*.cjs
+**/*.tsbuildinfo
+**/*.map
+
+# Optional: Ignore dist or build folders across packages
+**/dist/
+**/build/
 
 # Editor directories and files
 .vscode/*
@@ -22,3 +31,4 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
