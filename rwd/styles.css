@@ -76,6 +76,7 @@ section h2 {
 	height: 100%;
 	background-color: #e0e0e0;
 	border-radius: 5px;
+	overflow: hidden;
 }
 
 .featured-image img {
@@ -120,7 +121,6 @@ section h2 {
 
 /* 3. Flex/Grid List - Latest Cards */
 .latest {
-	padding: 6rem 0;
 	background: #f5f5f5;
 	width: 100%;
 }
@@ -174,13 +174,153 @@ section h2 {
 	padding-right: 1.5rem;
 }
 /* 4. Flex/Grid 2D - Hot News */
+.hot {
+	background: #1d1d1d;
+	color: #fff;
+}
 
+.hot-title {
+	margin-bottom: 1rem;
+}
+
+.hot-subtitle {
+	margin-bottom: 2rem;
+	color: #666;
+}
 /* 4a. Flex/Grid 2D - Hot News - Flex Version */
+.hot-flex {
+	display: flex;
+	gap: 1rem;
+	height: 600px;
+	width: 100%;
+}
+
+.hot-card {
+	background-color: #e0e0e0;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.hot-card img {
+	width: 100%;
+	height: 100%;
+}
+
+.hot-left {
+	/* flex-grow, flex-shrink, flex-basis */
+	/* Allows the item to take up how many % of the width */
+	flex: 0 0 50%;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.hot-right {
+	flex: 0 0 50%;
+	display: flex;
+	overflow: hidden;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.hot-right-inner {
+	display: flex;
+	height: 50%;
+	gap: 1rem;
+}
 
 /* 4b. Flex/Grid 2D - Hot News - Grid Version */
+.hot-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	gap: 1rem;
+	height: 600px;
+}
+
+.hot-grid-1 {
+	grid-column: span 2;
+	grid-row: span 2;
+}
+
+.hot-grid-2,
+.hot-grid-3 {
+	grid-column: span 1;
+	grid-row: span 1;
+}
+
+.hot-grid-4 {
+	grid-column: span 2;
+	grid-row: span 1;
+}
 
 /* 5. Grid - Masonry Layout */
+.masonry {
+	padding: 4rem 1rem;
+	background: #fff;
+}
 
+.masonry-subtitle {
+	margin-bottom: 2rem;
+	color: #666;
+}
+
+.masonry-grid {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(3, 200px);
+	gap: 1rem;
+	max-width: none;
+	margin: 0 auto;
+}
+
+.masonry-item img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.masonry-item {
+	background-color: #e0e0e0;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.item1 {
+	grid-column: 1/2;
+	grid-row: 1/3;
+}
+
+.item2 {
+	grid-column: 2/4;
+	grid-row: 1/3;
+}
+
+.item4 {
+	grid-column: 4/5;
+	grid-row: 1/2;
+}
+
+.item5 {
+	grid-column: 5/6;
+	grid-row: 1/2;
+}
+
+.item5 {
+	grid-column: 4/6;
+	grid-row: 2/3;
+}
+
+.item6 {
+	grid-column: 1/5;
+	grid-row: 3/4;
+}
+
+.item7 {
+	grid-column: 5/6;
+	grid-row: 3/4;
+}
 /* 6. Grid Templates - News Gallery */
 
+.gallery {
+}
 /* 7. Images and Styling */
