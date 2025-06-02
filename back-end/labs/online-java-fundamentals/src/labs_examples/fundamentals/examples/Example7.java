@@ -17,6 +17,7 @@ class BlockDemo {
         // code block used for two or more statements
         if(i != 0) {
             System.out.println("i does not equal zero");
+            // dividing by 0 will prompt divide by zero error
             d = j / i;
             System.out.println("j / i is " + d);
         }

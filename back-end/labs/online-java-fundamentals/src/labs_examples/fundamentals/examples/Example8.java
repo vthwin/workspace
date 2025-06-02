@@ -9,6 +9,7 @@ package labs_examples.fundamentals.examples;
 */
 class GalToLitTable {
     public static void main(String args[]) {
+        // grouped variable declaration of the same type
         double gallons, liters;
         int counter;
 
@@ -18,6 +19,7 @@ class GalToLitTable {
             System.out.println(gallons + " gallons is " +
                     liters + " liters.");
 
+            // increment by 1
             counter++;
             // every 10th line, print a blank line
             if(counter == 10) {

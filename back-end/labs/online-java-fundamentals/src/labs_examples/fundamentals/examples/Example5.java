@@ -12,11 +12,11 @@ class IfDemo {
         a = 2;
         b = 3;
 
-        //check if a is less that b
+        // check if a is less that b
         if(a < b) System.out.println("a is less than b");
 
-        //check if they are equal
-        //they are not so
+        // check if they are equal
+        // they are not so
         // this won't display anything
         if(a == b) System.out.println("you won't see this");
 

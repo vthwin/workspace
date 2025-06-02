@@ -21,6 +21,8 @@ class Example3 {
         System.out.println(); // print a blank line
 
         // now, divide both by 4
+        // int can't store decimal so it automatically removes values in the decimal place
+        // while double can store floating-point values
         var = var / 4;
         x = x / 4;
 

@@ -23,3 +23,18 @@ Example Output:
     2. mkdir Terminal_testing
     3. //...
 
+Output:
+vi@Vis-MacBook back-end % mkdir terminal-testing
+vi@Vis-MacBook back-end % cd terminal-testing
+vi@Vis-MacBook terminal-testing % touch 1.txt 2.txt 3.txt
+vi@Vis-MacBook terminal-testing % ls
+1.txt	2.txt	3.txt
+vi@Vis-MacBook terminal-testing % mkdir inner-folder
+vi@Vis-MacBook terminal-testing % mv 1.txt inner-folder
+vi@Vis-MacBook terminal-testing % rm -rf inner-folder
+vi@Vis-MacBook terminal-testing % rm 2.txt
+vi@Vis-MacBook terminal-testing % vim 3.txt
+vi@Vis-MacBook terminal-testing % cat 3.txt
+Wrote something here
+vi@Vis-MacBook terminal-testing % grep 3.txt hello
+
